@@ -82,9 +82,11 @@ test:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: product-register_production
-  username: product-register
-  password: <%= ENV['PRODUCT-REGISTER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['postgres://jxunqrlqotrane:4ec86f3e2cd06dc81dc571bfd13e5bedf9d4c48b92cebc37d325a1359818be0d@ec2-34-204-22-76.compute-1.amazonaws.com:5432/d2r8sa1vi6ag05'] %>
+#
+#production:
+#  <<: *default
+#  database: product-register_production
+#  username: product-register
+#  password: <%= ENV['PRODUCT-REGISTER_DATABASE_PASSWORD'] %>
